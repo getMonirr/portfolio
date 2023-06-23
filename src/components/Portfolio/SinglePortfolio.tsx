@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const SinglePortfolio = ({ portfolio }: { portfolio: object }) => {
   //  @ts-ignore
-  const { stack, name, url } = portfolio;
+  const { stack, name, url, image } = portfolio;
 
   let [isOpen, setIsOpen] = useState(false);
 
@@ -31,8 +31,10 @@ const SinglePortfolio = ({ portfolio }: { portfolio: object }) => {
       >
         <figure className="overflow-hidden rounded-xl">
           <Image
-            className="rounded-xl group-hover:scale-110 transition duration-500"
-            src={languageImage}
+            width={500}
+            height={800}
+            className="rounded-xl group-hover:scale-110 transition duration-500 w-full"
+            src={image}
             alt="image"
           />
         </figure>

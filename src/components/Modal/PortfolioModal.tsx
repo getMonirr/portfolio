@@ -48,14 +48,16 @@ const PortfolioModal = ({
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="overflow-hidden">
                       <Image
-                        src={modalImage}
+                        // @ts-ignore
+                        src={portfolio.image}
+                        width={500}
+                        height={800}
                         alt="image"
-                        className="group-hover:scale-110 transition duration-300 rounded-xl"
+                        className="group-hover:scale-110 transition duration-300 rounded-xl w-full h-full object-cover object-center"
                       />
                     </div>
                     <div className="">
                       <p className="text-[#878e99] leading-[30px] mb-2 text-sm">
-                        {" "}
                         Feature - Design
                       </p>
                       <h1 className="font-bold text-3xl text-get-secondary mb-5">

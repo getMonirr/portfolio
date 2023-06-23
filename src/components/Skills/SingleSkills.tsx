@@ -3,11 +3,11 @@ import Image from "next/image";
 const SingleSkills = ({
   title,
   number,
-  logo
+  logo,
 }: {
   title: string;
   number: number;
-  logo: string
+  logo: string;
 }) => {
   const maxSpans = 5;
   return (
@@ -17,7 +17,7 @@ const SingleSkills = ({
         <span>{title}</span>
         {/* generate span depends on number */}
 
-        <div className="ml-8 space-x-px mt-2">
+        <div className="space-x-px mt-2 ml-auto mr-40">
           {[...Array(maxSpans)].map((_, index) => (
             <span
               key={index}

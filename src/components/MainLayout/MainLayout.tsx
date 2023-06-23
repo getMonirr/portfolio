@@ -36,7 +36,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
         <LeftSidebar />
       </div>
       {/* main */}
-      <div className="flex-1 lg:ml-[400px]">
+      <div className="flex-1 lg:ml-[250px]">
         <HomeContainer isShow={isShow}>{children}</HomeContainer>
       </div>
     </div>
