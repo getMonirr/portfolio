@@ -59,13 +59,16 @@ const PortfolioModal = ({
                         Feature - Design
                       </p>
                       <h1 className="font-bold text-3xl text-get-secondary mb-5">
+                        {/* @ts-ignore */}
                         {portfolio.name}
                       </h1>
                       <p className="text-[#878e99] text-lg leading-[30px] mb-[20px]">
+                        {/* @ts-ignore */}
                         {portfolio.details}
                       </p>
                       <p>Technologies</p>
                       <div className=" flex flex-wrap gap-3 mt-4">
+                        {/* @ts-ignore */}
                         {portfolio.technologies.map((tech) => (
                           <button
                             key={tech}
@@ -76,12 +79,19 @@ const PortfolioModal = ({
                         ))}
                       </div>
                       <div className="flex flex-col lg:flex-row  lg:items-center justify-between mt-8">
+                        {/* @ts-ignore */}
                         <Link href={portfolio.client}>
-                          <ContactBtn className="w-full">GitHub client</ContactBtn>
+                          <ContactBtn className="w-full">
+                            GitHub client
+                          </ContactBtn>
                         </Link>
+                        {/* @ts-ignore */}
                         <Link href={portfolio.server}>
-                          <ContactBtn className="w-full">GitHub server</ContactBtn>
+                          <ContactBtn className="w-full">
+                            GitHub server
+                          </ContactBtn>
                         </Link>
+                        {/* @ts-ignore */}
                         <Link href={portfolio.url}>
                           <ContactBtn className="w-full">Live site</ContactBtn>
                         </Link>

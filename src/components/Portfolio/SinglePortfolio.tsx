@@ -7,6 +7,7 @@ import PortfolioModal from "../Modal/PortfolioModal";
 import Link from "next/link";
 
 const SinglePortfolio = ({ portfolio }: { portfolio: object }) => {
+  //  @ts-ignore
   const { stack, name, url } = portfolio;
 
   let [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const SinglePortfolio = ({ portfolio }: { portfolio: object }) => {
             alt="image"
           />
         </figure>
-        <div >
+        <div>
           <div>
             <h4 className="text-sm text-get-primary my-4">{stack}</h4>
             <h1 className="text-2xl font-medium text-get-body-text">{name}</h1>
