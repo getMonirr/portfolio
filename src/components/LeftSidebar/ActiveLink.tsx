@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-
+// @ts-ignore
 const ActiveLink = ({ href, activeClassName, children, exact, ...props }) => {
   const path = usePathname();
   const active = exact ? exact === path : path.startsWith(href);
@@ -16,7 +16,7 @@ const ActiveLink = ({ href, activeClassName, children, exact, ...props }) => {
 
   return (
     <Link
-      className={`${path === '/about' ? "text-blue-400" : "text-yellow-400"}`}
+      className={`${path === "/about" ? "text-blue-400" : "text-yellow-400"}`}
       href={href}
       {...props}
     >
@@ -26,5 +26,5 @@ const ActiveLink = ({ href, activeClassName, children, exact, ...props }) => {
 };
 
 export default ActiveLink;
-
+// @ts-ignore
 const classNames = (...args) => args.filter(Boolean).join(" ");
