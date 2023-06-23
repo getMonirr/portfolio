@@ -13,7 +13,7 @@ const menu = [
   {
     icon: FiHome,
     title: "home",
-    path: "http://localhost:3000",
+    path: "/",
   },
   {
     icon: FiUser,
