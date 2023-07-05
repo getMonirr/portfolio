@@ -33,7 +33,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
             : "hidden"
         }`}
       >
-        <LeftSidebar />
+        <LeftSidebar isShow={isShow} setIsShow={setIsShow} />
       </div>
       {/* main */}
       <div className="flex-1 lg:ml-[250px]">

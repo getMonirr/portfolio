@@ -13,11 +13,17 @@ const SingleSkills = ({
   return (
     <div>
       <div className="flex items-center gap-4">
-        <Image className="text-white" alt="image" src={logo} />
+        <Image
+          width={28}
+          height={28}
+          className="text-white"
+          alt="image"
+          src={logo}
+        />
         <span>{title}</span>
         {/* generate span depends on number */}
 
-        <div className="space-x-px mt-2 ml-auto mr-40">
+        <div className="space-x-px mt-2 ml-auto lg:mr-40">
           {[...Array(maxSpans)].map((_, index) => (
             <span
               key={index}

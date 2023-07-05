@@ -6,7 +6,13 @@ import React from "react";
 import ActiveLink from "./ActiveLink";
 import Link from "next/link";
 
-const LeftSidebar = () => {
+const LeftSidebar = ({
+  isShow,
+  setIsShow,
+}: {
+  isShow: boolean;
+  setIsShow: Function;
+}) => {
   return (
     <div>
       <ul className="space-y-2">
@@ -16,7 +22,11 @@ const LeftSidebar = () => {
             className={`flex gap-4 items-start get-btn w-[200px] py-4 justify-start pl-6`}
           >
             <item.icon className="h-[20px] w-[20px]" />
-            <Link href={`${item.path}`} className="uppercase text-base">
+            <Link
+              onClick={() => setIsShow(!isShow)}
+              href={`${item.path}`}
+              className="uppercase text-base"
+            >
               {item.title}
             </Link>
           </li>
