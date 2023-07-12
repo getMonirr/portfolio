@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const handleFormSubmit = (e: FormEvent) => {
-    const form = e.target as HTMLInputElement;
+    const form = e.target as HTMLFormElement;
     e.preventDefault();
     Swal.fire("Message sent", "I will response ASAP", "success");
     form.reset();
