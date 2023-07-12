@@ -45,7 +45,7 @@ const Page = () => {
           <h3 className="border-l-2 pl-4 mb-6 text-lg">
             Front-End Development
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-8 xl:grid-cols-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-x-8 xl:grid-cols-3 ">
             <SingleSkills title="Javascript" number={4} logo={javascript.src} />
             <SingleSkills title="Typescript" number={4} logo={typescript.src} />
             <SingleSkills title="Next.js" number={4} logo={next.src} />
@@ -60,7 +60,7 @@ const Page = () => {
         <div className="h-[1px] bg-[#121415] w-full mt-12 mb-12"></div>
         <div>
           <h3 className="border-l-2 pl-4 mb-6 text-lg">Back-End Development</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-8 xl:grid-cols-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-x-8 xl:grid-cols-3 ">
             <SingleSkills title="Javascript" number={4} logo={javascript.src} />
             <SingleSkills title="Node.js" number={3} logo={node.src} />
             <SingleSkills title="MongoDB" number={3} logo={mongo.src} />
@@ -72,7 +72,7 @@ const Page = () => {
         <div className="h-[1px] bg-[#121415] w-full mt-12 mb-12"></div>
         <div>
           <h3 className="border-l-2 pl-4 mb-6 text-lg">Tools & Packages</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-x-8 xl:grid-cols-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-x-8 xl:grid-cols-3 ">
             <SingleSkills
               title="React dev tools"
               number={4}

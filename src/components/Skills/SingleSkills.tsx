@@ -1,4 +1,5 @@
 import Image from "next/image";
+import IconBtn from "../Shared/GetButton/IconBtn";
 
 const SingleSkills = ({
   title,
@@ -14,13 +15,15 @@ const SingleSkills = ({
     <div>
       {/* <div className="grid grid-cols-2 items-center justify-content-center  gap-4"> */}
       <div className="flex items-center gap-4">
-        <Image
-          width={28}
-          height={28}
-          className="text-white"
-          alt="image"
-          src={logo}
-        />
+        <IconBtn>
+          <Image
+            width={20}
+            height={20}
+            className="text-white"
+            alt="image"
+            src={logo}
+          />
+        </IconBtn>
         <span>{title}</span>
         {/* generate span depends on number */}
 

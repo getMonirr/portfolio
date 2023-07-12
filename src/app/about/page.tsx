@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import IconBtn from "@/components/Shared/GetButton/IconBtn";
 import SectionTitle from "@/components/Shared/SectionTitle/SectionTitle";
 import Image from "next/image";
@@ -13,6 +13,11 @@ import {
 import { MdOutlineAlternateEmail, MdPhoneIphone } from "react-icons/md";
 import personImage from "../../../public/images/banner-03.png";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Link from "next/link";
+
+import next from "../../../public/skill/next.png";
+import ts from "../../../public/skill/typescript-2.svg";
+import react from "../../../public/skill/React-icon.svg.png";
 
 const page = () => {
   return (
@@ -25,22 +30,24 @@ const page = () => {
               Welcome my world
             </h3>
             <h1 className="text-4xl lg:text-6xl font-bold lg:leading-[75px] mb-6">
-              Hi, I am <br />{" "}
+              Hi, I am <br />
               <span className="text-get-primary">Md. Monir</span>
-              <br /> <span className="text-xl lg:text-6xl">Full Stack Developer</span>
+              <br />
+              <span className="text-xl lg:text-6xl">Full Stack Developer</span>
             </h1>
             <p className="leading-[30px] text-get-body-text lg:mr-[16%]">
-              I use animation as a third dimension by which to simplify
-              experiences and kuiding thro each and every interaction. I’m not
-              adding motion just to spruce things up, but doing it in ways that.
+              Full Stack Developer with massive love for MERN stack. Skilled in
+              Next.Js, TypeScript, JavaScript, React.js, MongoDB, Express.js,
+              Node.js, and API development. I am Seeking exciting projects to
+              work on.
             </p>
             <div className="space-y-5 mt-10">
               <div className="flex gap-4 items-center">
-                <MdOutlineAlternateEmail className="h-6 w-6 text-get-primary" />{" "}
+                <MdOutlineAlternateEmail className="h-6 w-6 text-get-primary" />
                 <span>getMonirr@gmail.com</span>
               </div>
               <div className="flex gap-4 items-center">
-                <MdPhoneIphone className="h-6 w-6 text-get-primary" />{" "}
+                <MdPhoneIphone className="h-6 w-6 text-get-primary" />
                 <span>+880 1771-909060</span>
               </div>
             </div>
@@ -51,9 +58,12 @@ const page = () => {
                 FIND WITH ME
               </h1>
               <div className="flex items-center gap-6">
-                <IconBtn>{<FiFacebook className="h-5 w-5" />}</IconBtn>
-                <IconBtn>{<FiLinkedin className="h-5 w-5" />}</IconBtn>
-                <IconBtn>{<FiGithub className="h-5 w-5" />}</IconBtn>
+                <Link href="https://www.linkedin.com/in/getmonirr/">
+                  <IconBtn>{<FiLinkedin className="h-5 w-5" />}</IconBtn>
+                </Link>
+                <Link href="https://github.com/getMonirr">
+                  <IconBtn>{<FiGithub className="h-5 w-5" />}</IconBtn>
+                </Link>
               </div>
             </div>
             <div>
@@ -61,9 +71,39 @@ const page = () => {
                 BEST SKILL ON
               </h1>
               <div className="flex items-center gap-6">
-                <IconBtn>{<FiFigma className="h-5 w-5" />}</IconBtn>
-                <IconBtn>{<FiFacebook className="h-5 w-5" />}</IconBtn>
-                <IconBtn>{<FiFacebook className="h-5 w-5" />}</IconBtn>
+                <IconBtn>
+                  {
+                    <Image
+                      src={next.src}
+                      width={50}
+                      height={50}
+                      alt="next"
+                      className="h-5 w-5"
+                    />
+                  }
+                </IconBtn>
+                <IconBtn>
+                  {
+                    <Image
+                      src={ts.src}
+                      width={50}
+                      height={50}
+                      alt="next"
+                      className="h-5 w-5"
+                    />
+                  }
+                </IconBtn>
+                <IconBtn>
+                  {
+                    <Image
+                      src={react.src}
+                      width={50}
+                      height={50}
+                      alt="next"
+                      className="h-5 w-5"
+                    />
+                  }
+                </IconBtn>
               </div>
             </div>
           </div>

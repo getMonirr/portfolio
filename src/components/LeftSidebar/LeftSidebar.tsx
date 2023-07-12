@@ -5,6 +5,9 @@ import { menu } from "@/constants/Constant";
 import React, { useEffect, useState } from "react";
 import ActiveLink from "./ActiveLink";
 import Link from "next/link";
+import Image from "next/image";
+
+import getMonirr from "../../../public/skill/getMonirr.png";
 
 const LeftSidebar = ({
   isShow,
@@ -40,6 +43,11 @@ const LeftSidebar = ({
 
   return (
     <div>
+      <div className="flex justify-center items-center my-10">
+        <Link href="/">
+          <Image src={getMonirr.src} alt="getMonirr" width={30} height={30} />
+        </Link>
+      </div>
       <ul className="space-y-2">
         {menu.map((item, index) => (
           <li
