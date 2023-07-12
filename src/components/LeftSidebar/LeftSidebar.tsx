@@ -2,7 +2,7 @@
 
 import { menu } from "@/constants/Constant";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ActiveLink from "./ActiveLink";
 import Link from "next/link";
 
@@ -13,6 +13,31 @@ const LeftSidebar = ({
   isShow: boolean;
   setIsShow: Function;
 }) => {
+  const [is768pxScreen, setIs768pxScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIs768pxScreen(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Check initial screen size on component mount
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleClick = () => {
+    if (is768pxScreen) {
+      // Call your function here for mobile devices with 320px screen size
+      console.log("Clicked on mobile device with 320px screen size");
+      setIsShow(!isShow);
+    }
+  };
+
   return (
     <div>
       <ul className="space-y-2">
@@ -23,7 +48,7 @@ const LeftSidebar = ({
           >
             <item.icon className="h-[20px] w-[20px]" />
             <Link
-              onClick={() => setIsShow(!isShow)}
+              onClick={handleClick}
               href={`${item.path}`}
               className="uppercase text-base"
             >

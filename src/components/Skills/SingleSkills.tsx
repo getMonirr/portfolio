@@ -12,6 +12,7 @@ const SingleSkills = ({
   const maxSpans = 5;
   return (
     <div>
+      {/* <div className="grid grid-cols-2 items-center justify-content-center  gap-4"> */}
       <div className="flex items-center gap-4">
         <Image
           width={28}
@@ -23,7 +24,7 @@ const SingleSkills = ({
         <span>{title}</span>
         {/* generate span depends on number */}
 
-        <div className="space-x-px mt-2 ml-auto lg:mr-40">
+        <div className="space-x-px mt-2 ml-auto  lg:mr-8 xl:mr-16 2xl:mr-40">
           {[...Array(maxSpans)].map((_, index) => (
             <span
               key={index}

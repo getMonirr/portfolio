@@ -1,4 +1,4 @@
-import { FiHome, FiUser } from "react-icons/fi";
+import { FiHome, FiUser, FiPhoneCall } from "react-icons/fi";
 import { GiSkills } from "react-icons/gi";
 import { BsStack } from "react-icons/bs";
 import edu from "../../public/images/edu.png";
@@ -35,6 +35,11 @@ const menu = [
     icon: BsStack,
     title: "portfolio",
     path: "portfolio",
+  },
+  {
+    icon: FiPhoneCall,
+    title: "Contact",
+    path: "contact",
   },
 ];
 

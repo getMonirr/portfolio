@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <div
       // style={{ backgroundImage: `url(${me.src})` }}
-      className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-no-repeat lg:bg-left-top relative  lg:gap-8"
+      className="flex flex-col xl:flex-row items-center justify-center min-h-screen bg-no-repeat lg:bg-left-top relative  lg:gap-8"
     >
-      <div className="mt-16 lg:mt-0">
+      <div className="mt-16 xl:mt-0">
         <h1 className="text-2xl lg:text-5xl text-get-body-text font-bold uppercase mb-4">
           Md. Monir Hoshen
         </h1>
