@@ -2,11 +2,10 @@
 
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
-import { Fragment } from "react";
-import modalImage from "../../../public/images/blog-03.jpg";
-import ContactBtn from "../Shared/GetButton/ContactBtn";
-import { IoClose } from "react-icons/io5";
 import Link from "next/link";
+import { Fragment } from "react";
+import { IoClose } from "react-icons/io5";
+import ContactBtn from "../Shared/GetButton/ContactBtn";
 
 const PortfolioModal = ({
   closeModal,
@@ -66,7 +65,12 @@ const PortfolioModal = ({
                       </h1>
                       <p className="text-[#878e99] text-lg leading-[30px] mb-[20px]">
                         {/* @ts-ignore */}
-                        {portfolio.details}
+                        {portfolio?.details?.map((detail) => (
+                          <h3 key={detail?.title}>
+                            <p className="font-bold">{detail?.title}</p>
+                            {detail?.description}
+                          </h3>
+                        ))}
                       </p>
                       <p>Technologies</p>
                       <div className=" flex flex-wrap gap-3 mt-4">
